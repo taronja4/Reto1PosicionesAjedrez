@@ -172,7 +172,7 @@ public class Metodos {
             }
         }
 
-        System.out.print("Desde " + posicion + " los posibles movimientos de la torre son: ");
+        System.out.print("Desde " + posicion + " los posibles movimientos son: ");
 
         String quitarComa = "";
         for (int i = 0; i < moverLetra.length; i++) {
@@ -247,6 +247,8 @@ public class Metodos {
             }
         }
 
+        System.out.print("Desde " + posicion + " los posibles movimientos son: ");
+
         String quitarComa = "";
         for (int i = 0; i < moverLetra.length; i++) {
             int letraFinal = indiceLetra + moverLetra[i];
@@ -283,8 +285,10 @@ public class Metodos {
             }
         }
 
+        System.out.print("Desde " + posicion + " los posibles movimientos son: ");
+
         String quitarComa = "";
-        for (int i = 0; i < moverLetra.length; i++) {
+        for (int i = 0; i < moverLetra.length; iMovimientos de las piezas++) {
             int letraFinal = indiceLetra + moverLetra[i];
             int numerofinal = indiceNumero + moverNumero[i];
 
