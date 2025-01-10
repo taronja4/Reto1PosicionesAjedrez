@@ -68,7 +68,9 @@ public class Metodos {
         return letraDelColor;
     }
 
-    public static int movimientoPeon () {
+public static int movimientoPeon () {
+        Scanner sc = new Scanner(System.in);
+        String piezaelegida;
         int posicion = 0;
         String color = colorPieza();
         String posicionPeon = posicion();
@@ -84,7 +86,25 @@ public class Metodos {
                 System.out.println("Posición incorrecta, el peón blanco nunca puede estar en la fila 1.");
             }else if (pasarNumAASCII == 7) {
                 System.out.println("Avanza a " + "" + letra + numeroFinalNoEnASCII);
-                System.out.println("El peón llega a la última casilla y se transforma en Dama.");
+                System.out.println("¿En que pieza quieres convertir el peón?");
+                piezaelegida=sc.next();
+            do {
+                  if (!piezaelegida.equalsIgnoreCase("A") && !piezaelegida.equalsIgnoreCase("D") && !piezaelegida.equalsIgnoreCase("c") && !piezaelegida.equalsIgnoreCase("T")){
+                    System.out.println("No has escogido una pieza correcta");
+                    System.out.println("¿En que pieza quieres convertir el peón?");
+                    piezaelegida=sc.next();
+                }
+                  if (piezaelegida.equalsIgnoreCase("A")){
+                    System.out.println("Tu peón se convierte en alfil");
+                } if (piezaelegida.equalsIgnoreCase("D")){
+                    System.out.println("Tu peón se convierte en dama");
+                } if (piezaelegida.equalsIgnoreCase("C")){
+                    System.out.println("Tu peón se convierte en caballo");
+                } if (piezaelegida.equalsIgnoreCase("T")){
+                    System.out.println("Tu peón se convierte en Torre");
+                }
+
+            } while (!piezaelegida.equalsIgnoreCase("A") && !piezaelegida.equalsIgnoreCase("D") && !piezaelegida.equalsIgnoreCase("c") && !piezaelegida.equalsIgnoreCase("T"));
             }else if (pasarNumAASCII >= 8) {
                 System.out.println("El peón no puede hacer el siguiente movimiento porque se sale del tablero.");
             }else {
@@ -103,7 +123,25 @@ public class Metodos {
                 System.out.println("Posición incorrecta, el peón negro nunca puede estar en la fila 8.");
             }else if (pasarNumAASCII == 2){
                 System.out.println("Avanza a " + "" + letra + numeroFinalNoEnASCII);
-                System.out.println("El peón llega a la última casilla y se transforma en Dama.");
+                System.out.println("¿En que pieza quieres convertir el peón?");
+                piezaelegida=sc.next();
+                do {
+                      if (!piezaelegida.equalsIgnoreCase("A") && !piezaelegida.equalsIgnoreCase("D") && !piezaelegida.equalsIgnoreCase("c") && !piezaelegida.equalsIgnoreCase("T")){
+                        System.out.println("No has escogido una pieza correcta");
+                        System.out.println("¿En que pieza quieres convertir el peón?");
+                        piezaelegida=sc.next();
+                    }
+                      if (piezaelegida.equalsIgnoreCase("A")){
+                        System.out.println("Tu peón se convierte en alfil");
+                    } if (piezaelegida.equalsIgnoreCase("D")){
+                        System.out.println("Tu peón se convierte en dama");
+                    } if (piezaelegida.equalsIgnoreCase("C")){
+                        System.out.println("Tu peón se convierte en caballo");
+                    } if (piezaelegida.equalsIgnoreCase("T")){
+                        System.out.println("Tu peón se convierte en Torre");
+                    }
+
+                } while (!piezaelegida.equalsIgnoreCase("A") && !piezaelegida.equalsIgnoreCase("D") && !piezaelegida.equalsIgnoreCase("c") && !piezaelegida.equalsIgnoreCase("T"));
             }else if (pasarNumAASCII <= 1){
                 System.out.println("El peón no puede hacer el siguiente movimiento porque se sale del tablero.");
             }else {
