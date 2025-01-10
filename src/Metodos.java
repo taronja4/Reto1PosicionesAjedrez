@@ -326,7 +326,7 @@ public static int movimientoPeon () {
         System.out.print("Desde " + posicion + " los posibles movimientos son: ");
 
         String quitarComa = "";
-        for (int i = 0; i < moverLetra.length; iMovimientos de las piezas++) {
+        for (int i = 0; i < moverLetra.length; i++) {
             int letraFinal = indiceLetra + moverLetra[i];
             int numerofinal = indiceNumero + moverNumero[i];
 
