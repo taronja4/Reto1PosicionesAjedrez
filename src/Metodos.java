@@ -213,6 +213,14 @@ public class Metodos {
                 tablero[i][j] = ' ';
             }
         }
+
+        System.out.println();
+
+        String posicionInicialDeLaPieza = posicion;
+        int filaNumero = 8 - Character.getNumericValue(posicionInicialDeLaPieza.charAt(1));
+        int columnaLetra = posicionInicialDeLaPieza.charAt(0) - 'A';
+        tablero[filaNumero][columnaLetra] = 'A';
+        
         for (int i = 0; i < arrayCoordenadas.length; i++) {
             String coordenada = arrayCoordenadas[i];
             int fila = 8 - Character.getNumericValue(coordenada.charAt(1));
@@ -268,6 +276,14 @@ public class Metodos {
                 tablero[i][j] = ' ';
             }
         }
+
+        System.out.println();
+
+        String posicionInicialDeLaPieza = posicion;
+        int filaNumero = 8 - Character.getNumericValue(posicionInicialDeLaPieza.charAt(1));
+        int columnaLetra = posicionInicialDeLaPieza.charAt(0) - 'A';
+        tablero[filaNumero][columnaLetra] = 'T';
+        
         for (int i = 0; i < arrayCoordenadas.length; i++) {
             String coordenada = arrayCoordenadas[i];
             int fila = 8 - Character.getNumericValue(coordenada.charAt(1));
@@ -324,6 +340,14 @@ public class Metodos {
                 tablero[i][j] = ' ';
             }
         }
+
+        System.out.println();
+
+        String posicionInicialDeLaPieza = posicion;
+        int filaNumero = 8 - Character.getNumericValue(posicionInicialDeLaPieza.charAt(1));
+        int columnaLetra = posicionInicialDeLaPieza.charAt(0) - 'A';
+        tablero[filaNumero][columnaLetra] = 'C';
+        
         for (int i = 0; i < arrayCoordenadas.length; i++) {
             String coordenada = arrayCoordenadas[i];
             int fila = 8 - Character.getNumericValue(coordenada.charAt(1));
@@ -380,6 +404,14 @@ public class Metodos {
                 tablero[i][j] = ' ';
             }
         }
+
+        System.out.println();
+
+        String posicionInicialDeLaPieza = posicion;
+        int filaNumero = 8 - Character.getNumericValue(posicionInicialDeLaPieza.charAt(1));
+        int columnaLetra = posicionInicialDeLaPieza.charAt(0) - 'A';
+        tablero[filaNumero][columnaLetra] = 'D';
+        
         for (int i = 0; i < arrayCoordenadas.length; i++) {
             String coordenada = arrayCoordenadas[i];
             int fila = 8 - Character.getNumericValue(coordenada.charAt(1));
@@ -437,6 +469,13 @@ public class Metodos {
             }
         }
 
+        System.out.println();
+
+        String posicionInicialDeLaPieza = posicion;
+        int filaNumero = 8 - Character.getNumericValue(posicionInicialDeLaPieza.charAt(1));
+        int columnaLetra = posicionInicialDeLaPieza.charAt(0) - 'A';
+        tablero[filaNumero][columnaLetra] = 'R';
+        
         for (int i = 0; i < arrayCoordenadas.length; i++) {
             String coordenada = arrayCoordenadas[i];
             int fila = 8 - Character.getNumericValue(coordenada.charAt(1));
