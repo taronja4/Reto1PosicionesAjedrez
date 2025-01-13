@@ -25,6 +25,7 @@ public class Main {
         boolean salirBucle = false;
 
         while (!salirBucle) {
+            System.out.println();
             System.out.println("Escoge una pieza (solo una letra): ");
             String elegirPieza = sc.nextLine();
 
