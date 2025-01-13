@@ -7,7 +7,7 @@ public class Main {
         System.out.println("|--------------------------------------|");
         System.out.println("|  BIENVENIDO/A AL MARAVILLOSO RETO 1  |");
         System.out.println("|   DEL EQUIPO SÓLIDO FORMADO POR      |");
-        System.out.println("|    RAÚL, ADRIAN G, DAVID, TONI       |");
+        System.out.println("|       RAÚL, ADRIAN G, DAVID,         |");
         System.out.println("|        TONI Y JUAN CARLOS            |");
         System.out.println("|--------------------------------------|");
 
